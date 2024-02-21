@@ -1,6 +1,8 @@
 import { Inter } from 'next/font/google';
 
+import { Footer, Header } from '@/components/Layout';
 import { siteConfig } from '@/config/site';
+import { cn } from '@/lib/utils';
 
 import type { Metadata } from 'next';
 
@@ -55,7 +57,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(inter.className, 'relative')}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
