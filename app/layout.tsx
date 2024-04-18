@@ -1,14 +1,13 @@
-import { Inter } from 'next/font/google';
-
+import { inter, josefin, playfair } from '@/components/Font';
 import { Footer, Header } from '@/components/Layout';
 import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
 
+import { Providers } from './Providers';
+
 import type { Metadata } from 'next';
 
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
@@ -57,11 +56,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, 'relative')}>
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <Providers>
+        <body className={cn(josefin.className, inter.variable, playfair.variable, 'relative w-full')}>
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </Providers>
     </html>
   );
 }

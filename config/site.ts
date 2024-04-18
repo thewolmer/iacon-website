@@ -1,12 +1,14 @@
-import { SiteConfig } from "types";
+import { SiteConfig } from 'types';
 
 export const siteConfig: SiteConfig = {
-  name: "ArmoBot",
-  description: "//",
-  url: "https://iaconlabs.com",
-  ogImage: "https://armobot.xyz/images/banner.png",
-  twitterHandle: "@IaconLabs",
+  name: 'IaconLabs',
+  description: '//',
+  // TODO: breeze will give
+  url: 'https://iaconlabs.com',
+  ogImage: 'https://iaconlabs.com/images/banner.png',
+  // TODO: compressed img
+  twitterHandle: '@IaconLabs',
   links: {
-    twitter: "https://twitter.com/IaconLabs",
+    twitter: 'https://twitter.com/IaconLabs',
   },
 };

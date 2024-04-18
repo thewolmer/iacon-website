@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import { cn } from '@/lib/utils';
 
-const words = ['Alpha', 'Community', 'NFT Space'];
+const words = ['Transparency', 'Authenticity', 'Innovation'];
 
 export default function Tagline() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -21,12 +21,10 @@ export default function Tagline() {
   }, []);
 
   return (
-    <p className="text-center text-3xl text-foreground/40 md:text-5xl">
-      The only{' '}
+    <h2 className="text-center font-playfair text-5xl font-extrabold text-foreground/40  md:text-6xl ">
       <span className={cn('transition-all duration-700', fadeIn ? 'text-foreground/40' : 'text-foreground/100')}>
         {words[currentWordIndex]}
       </span>{' '}
-      you need.
-    </p>
+    </h2>
   );
 }
