@@ -12,7 +12,6 @@ const TeamMembers = [
     role: 'Founder',
     desc: "Meet Breeze, he is deeply involved in web 3.0.He founded laconLabs and manage collaborations of Moonie Moo and HeadrektNFT. Initially seeking financial stability, He now feel at home in the web3 world. He work as a collaboration manager and aspire to become a software engineer. Breeze's positive energy is what others appreciate about him.",
     img: 'https://i.seadn.io/gcs/files/7f0fa40af03eb1a08e373da9ae623d52.png?auto=format&w=256',
-    web: '',
     twitter: 'https://x.com/0xBreezey',
   },
   {
@@ -34,7 +33,6 @@ const TeamMembers = [
     role: 'Co-Founder/CTO',
     desc: 'Meet Wolmer, a creative web developer with four years of experience, specializing in Next.is and Vue.is. He is driven by a passion for creating visually captivating and aesthetically pleasing web designs that resonate with audiences and establish unique brand identities. Since 2021 , Wolmer has ventured into web3 and collaborated with the teams behind Moonie Moo and ArmoBot.',
     img: 'https://i.seadn.io/gcs/files/400bcca22aee447d1536966596122439.png?auto=format&w=256',
-    web: 'https://wolmer.me?utm_source=iaconlabs.com',
     twitter: 'https://x.com/WolmerTweets',
   },
   {
