@@ -22,7 +22,6 @@ export const Maze = () => {
   const scale = useTransform(scrollYProgress, [0, 0.65, 0.8, 1], [1, 1, 0.9, 1.25]);
   const rotate = useTransform(scrollYProgress, [0, 1], ['0deg', '40deg']);
   const opacity = useTransform(scrollYProgress, [0, 0.65, 0.85, 1], [0, 0, 0, 1]);
-  console.log(opacity);
   return (
     <div ref={targetRef} className="relative h-[250vh] w-full overflow-clip">
       <div className="sticky top-0 h-screen bg-background">
