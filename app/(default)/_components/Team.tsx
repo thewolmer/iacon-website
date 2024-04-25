@@ -37,7 +37,7 @@ const TeamMembers = [
   },
   {
     name: 'P1ng',
-    role: 'Editor, Graphics Artist',
+    role: 'Editor',
     desc: 'Meet Jatin, a passionate video editor and graphic designer. seamlessly combining creativity with technical expertise to bring ideas to life. dedication and innovation as driving forces, contributing his best to the world of web3',
     img: 'https://imgur.com/T9ZFC4C.png',
     twitter: 'https://x.com/jatinbtw',
@@ -78,11 +78,49 @@ export const Team = () => {
   const { scrollYProgress } = useScroll({
     target: container,
   });
-  const x = useTransform(scrollYProgress, [0, 1], ['1%', '-250%']);
+  const x = useTransform(scrollYProgress, [0, 1], ['0%', '-300%']);
+
   return (
-    <section ref={container} className="relative h-[400vh] w-full overflow-clip">
-      <motion.div style={{ x }} className="sticky top-0 flex h-screen w-full items-center gap-10 ">
-        <div className="flex h-full min-w-[50vw] flex-1 flex-col items-center justify-center p-2 text-center">
+    <>
+      <section ref={container} className="relative hidden h-[500vh] w-full overflow-clip md:block ">
+        <motion.div style={{ x }} className="sticky top-0 flex h-screen w-full items-center gap-10 ">
+          <div className="flex h-full min-w-[50vw] flex-1 flex-col items-center justify-center p-2 text-center">
+            <h3 className="font-playfair text-6xl font-extrabold">Team</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia exercitationem culpa tempore inventore,
+              blanditiis quod aliquid, laboriosam voluptatum quidem iusto porro necessitatibus iste vel cum quasi amet
+              consectetur pariatur optio?
+            </p>
+          </div>
+
+          {TeamMembers.map((member, i) => (
+            <div key={i} className="group relative mr-4 flex h-[60vh] min-w-[50vh] rounded bg-card p-5  shadow-xl">
+              <div className="z-10 flex h-full w-full flex-col items-center overflow-hidden">
+                <div className="relative mb-4 aspect-square w-40 bg-card">
+                  <Image
+                    src={member.img}
+                    fill
+                    alt={member.name}
+                    className="rounded-full grayscale group-hover:grayscale-0 "
+                  ></Image>
+                </div>
+                <p className="text-3xl font-extrabold uppercase text-muted-foreground">{member.name}</p>
+                <p className="text-xl font-semibold  text-secondary-foreground">{member.role}</p>
+                <Link href={member.twitter}>
+                  <div className="rounded-full p-3 transition-all duration-100 hover:bg-primary/30">
+                    <Twitter />
+                  </div>
+                </Link>
+                {/* <div className=" h-20 max-w-[90%] text-ellipsis text-center font-inter text-xs opacity-60">
+                <p className="h-full">{member.desc}</p>
+              </div> */}
+              </div>
+            </div>
+          ))}
+        </motion.div>
+      </section>
+      <section className="flex  flex-col items-center justify-center md:hidden ">
+        <div className="flex h-full flex-1 flex-col items-center justify-center p-2 text-center">
           <h3 className="font-playfair text-6xl font-extrabold">Team</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia exercitationem culpa tempore inventore,
@@ -90,27 +128,33 @@ export const Team = () => {
             consectetur pariatur optio?
           </p>
         </div>
-
-        {TeamMembers.map((member, i) => (
-          <div key={i} className="relative mr-4 flex h-[60vh] min-w-[50vh] rounded bg-card p-5 shadow-xl  ">
-            <div className="z-10 flex h-full w-full flex-col items-center overflow-hidden">
-              <div className="relative mb-4 aspect-square w-40 bg-card">
-                <Image src={member.img} fill alt={member.name} className=""></Image>
-              </div>
-              <p className="text-3xl font-extrabold uppercase text-muted-foreground">{member.name}</p>
-              <p className="text-xl font-semibold  text-secondary-foreground">{member.role}</p>
-              <Link href={member.twitter}>
-                <div className="rounded-full p-3 transition-all duration-100 hover:bg-primary/30">
-                  <Twitter />
+        <div className="grid grid-cols-2 items-center justify-center gap-2 p-2">
+          {TeamMembers.map((member, i) => (
+            <div key={i} className="group relative  flex  rounded bg-card p-5  shadow-xl">
+              <div className="z-10 flex h-full w-full flex-col items-center overflow-hidden">
+                <div className="relative mb-4 aspect-square w-32 bg-card">
+                  <Image
+                    src={member.img}
+                    fill
+                    alt={member.name}
+                    className="rounded-full grayscale group-hover:grayscale-0 "
+                  ></Image>
                 </div>
-              </Link>
-              {/* <div className=" h-20 max-w-[90%] text-ellipsis text-center font-inter text-xs opacity-60">
-                <p className="h-full">{member.desc}</p>
-              </div> */}
+                <p className="text-xl font-extrabold uppercase text-muted-foreground">{member.name}</p>
+                <p className="text-sm font-semibold  text-secondary-foreground">{member.role}</p>
+                <Link href={member.twitter}>
+                  <div className="rounded-full p-3 transition-all duration-100 hover:bg-primary/30">
+                    <Twitter />
+                  </div>
+                </Link>
+                {/* <div className=" h-20 max-w-[90%] text-ellipsis text-center font-inter text-xs opacity-60">
+                  <p className="h-full">{member.desc}</p>
+                </div> */}
+              </div>
             </div>
-          </div>
-        ))}
-      </motion.div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
