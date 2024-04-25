@@ -10,66 +10,68 @@ const TeamMembers = [
   {
     name: 'Breeze',
     role: 'Founder',
-    desc: "Meet Breeze, he is deeply involved in web 3.0.He founded laconLabs and manage collaborations of Moonie Moo and HeadrektNFT. Initially seeking financial stability, He now feel at home in the web3 world. He work as a collaboration manager and aspire to become a software engineer. Breeze's positive energy is what others appreciate about him.",
-    img: 'https://i.seadn.io/gcs/files/7f0fa40af03eb1a08e373da9ae623d52.png?auto=format&w=256',
-    twitter: 'https://x.com/0xBreezey',
+    img: '/images/team/breeze.gif',
+    twitter: 'https://twitter.com/0xbreeze_eth',
   },
   {
     name: 'Chaitanya',
-    role: 'Admin',
-    desc: 'Meet Chaitanya, a forex trader and programmer with a passion for the intersection of finance and technology. With expertise in both fields, I navigates the world of currency trading while also developing innovative software solutions. Mine skills in programming enhance my trading strategies, making me a versatile professional in the dynamic landscape of finance and technology.',
-    img: 'https://imgur.com/Nb8oPYn.png',
-    twitter: 'https://x.com/Chaitanyajeet06',
+    role: 'Administrator',
+    img: '/images/team/chaitanya.png',
+    twitter: 'https://twitter.com/Chaitanyajeet06',
   },
   {
     name: 'Dracula',
-    role: 'Collab Manager',
-    desc: "NFTs and Web3. Meet Dracula, a 22-year-old explorer in Fueled by a passion for upskilling, he's on a dynamic journey to master modern technology. In the ever-evolving digital landscape, he seeks excitement and purpose to contribute to innovation. With a commitment to growth, he navigates this dynamic terrain, ready to make meaningful contributions. He also takes pride in being a great leader, inspiring and guiding others in this transformative era of technology.",
-    img: 'https://imgur.com/6D0EKQk.png',
-    twitter: 'https://x.com/0xjaderx',
+    role: 'Manager',
+    img: '/images/team/dracula.png',
+    twitter: 'https://twitter.com/NFTDracu',
   },
   {
     name: 'Wolmer',
-    role: 'Co-Founder/CTO',
-    desc: 'Meet Wolmer, a creative web developer with four years of experience, specializing in Next.is and Vue.is. He is driven by a passion for creating visually captivating and aesthetically pleasing web designs that resonate with audiences and establish unique brand identities. Since 2021 , Wolmer has ventured into web3 and collaborated with the teams behind Moonie Moo and ArmoBot.',
-    img: 'https://i.seadn.io/gcs/files/400bcca22aee447d1536966596122439.png?auto=format&w=256',
-    twitter: 'https://x.com/WolmerTweets',
-  },
-  {
-    name: 'P1ng',
-    role: 'Editor',
-    desc: 'Meet Jatin, a passionate video editor and graphic designer. seamlessly combining creativity with technical expertise to bring ideas to life. dedication and innovation as driving forces, contributing his best to the world of web3',
-    img: 'https://imgur.com/T9ZFC4C.png',
-    twitter: 'https://x.com/jatinbtw',
-  },
-  {
-    name: 'Jade RX',
-    role: 'Analyst',
-    desc: 'Meet Jade, a Web3 enthusiast with 3+ years of experience in the space , where he has participated in numerous roles Crypto & NFT excelling in Community Manager and content creator. With more than 3 years of experience in Marketing, he has the ability to always keep the community active, create hype and make partnerships with the most outstanding proiects.',
-    img: 'https://imgur.com/6D0EKQk.png',
-    twitter: 'https://x.com/0xjaderx',
+    role: 'Tech Lead',
+    img: '/images/team/wolmer.png',
+    twitter: 'https://twitter.com/thewolmer',
   },
   {
     name: 'Tussu',
-    role: 'Analyst',
-    desc: 'I am TUSSU a 19yo WEB3 wierdo, currently an engineering student with specialization in Blockchain technology. With more than 2 years of experience in WEB3 space, I have worked with PRJCT Whitelist, TimithNFT, TheCybernites, GhoulsNFT and many more. I also have a good foundation in the Financial Markets, with basic risk management attributes. People like me because I give somewhat familiar energy.',
-    img: 'https://imgur.com/6D0EKQk.png',
-    twitter: 'https://x.com/0xjaderx',
+    role: 'Chief Analyst',
+    img: '/images/team/tussu.png',
+    twitter: 'https://twitter.com/GakhilTushar',
   },
   {
-    name: 'Trash.NFT',
-    role: 'Collab Manager',
-    desc: 'Meet Trash.NFT an 18-year-old individual who first delved into the world of cryptocurrency at the age of 14. His interest in NFTs was sparked in the late 2020s, leading him to actively engage in the space since early 2021. Throughout his iourney, he have contributed to approximately 25 proiects, including notable ones like Particle Ink, Metaplaces, HoneyRat, and Dre Empire. Notably, he is a Core team member of LuckyGo.',
-    img: 'https://imgur.com/6D0EKQk.png',
-    twitter: 'https://x.com/0xjaderx',
+    name: 'Jade',
+    role: 'Chief Analyst',
+    img: '/images/team/jade.png',
+    twitter: 'https://twitter.com/0xjaderx',
   },
-
   {
-    name: 'Onew',
+    name: 'Jasn',
+    role: 'Editor',
+    img: '/images/team/ping.png',
+    twitter: 'https://twitter.com/jatinbtw',
+  },
+  {
+    name: 'Oneu',
     role: 'Moderator',
-    desc: 'Meet Oneu, an 1 8-year-old student with an unwavering passion for the dynamic world of Web3 and cryptocurrency. Enthusiastically navigating the realms of crypto trading, Forex, and precious metals, OneU is a seasoned trader with an intuitive knack for spotting trends and opportunities in the market.',
-    img: 'https://imgur.com/6D0EKQk.png',
-    twitter: 'https://x.com/0xjaderx',
+    img: '/images/team/oneu.jpg',
+    twitter: '',
+  },
+  {
+    name: 'Trash NFT',
+    role: 'Collab Lead',
+    img: '/images/team/trash.jpg',
+    twitter: 'https://twitter.com/TrashNFT1',
+  },
+  {
+    name: 'Aditya',
+    role: 'Collab Lead',
+    img: '/images/team/aditya.png',
+    twitter: 'https://twitter.com/adityaeth',
+  },
+  {
+    name: 'Young',
+    role: 'Collab Manager',
+    img: '/images/team/young.jpg',
+    twitter: 'https://twitter.com/Danijel_Br',
   },
 ];
 
@@ -79,18 +81,16 @@ export const Team = () => {
     target: container,
   });
   const x = useTransform(scrollYProgress, [0, 1], ['0%', '-300%']);
+  const TeamDescripText =
+    'Our team comprises Web 3 veterans having over three years of extensive experience in both trading and technology.The core team of IaconLabs has collectively worked on more than 200 projects';
 
   return (
     <>
       <section ref={container} className="relative hidden h-[500vh] w-full overflow-clip md:block ">
         <motion.div style={{ x }} className="sticky top-0 flex h-screen w-full items-center gap-10 ">
-          <div className="flex h-full min-w-[50vw] flex-1 flex-col items-center justify-center p-2 text-center">
+          <div className="flex h-full min-w-[40vw] flex-1 flex-col items-center justify-center p-2 text-center">
             <h3 className="font-playfair text-6xl font-extrabold">Team</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia exercitationem culpa tempore inventore,
-              blanditiis quod aliquid, laboriosam voluptatum quidem iusto porro necessitatibus iste vel cum quasi amet
-              consectetur pariatur optio?
-            </p>
+            <p>{TeamDescripText}</p>
           </div>
 
           {TeamMembers.map((member, i) => (
@@ -122,11 +122,7 @@ export const Team = () => {
       <section className="flex  flex-col items-center justify-center md:hidden ">
         <div className="flex h-full flex-1 flex-col items-center justify-center p-2 text-center">
           <h3 className="font-playfair text-6xl font-extrabold">Team</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia exercitationem culpa tempore inventore,
-            blanditiis quod aliquid, laboriosam voluptatum quidem iusto porro necessitatibus iste vel cum quasi amet
-            consectetur pariatur optio?
-          </p>
+          <p>{TeamDescripText}</p>
         </div>
         <div className="grid grid-cols-2 items-center justify-center gap-2 p-2">
           {TeamMembers.map((member, i) => (

@@ -10,11 +10,6 @@ interface Props {
 export const Providers = ({ children }: Props) => {
   useEffect(() => {
     const lenis = new Lenis();
-
-    // lenis.on('scroll', (e) => {
-    //   console.log(e);
-    // });
-
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);

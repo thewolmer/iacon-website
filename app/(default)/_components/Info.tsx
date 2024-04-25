@@ -21,9 +21,8 @@ export const Info = () => {
     <section className="flex h-[150vh] w-full flex-col items-center justify-center gap-2 px-2">
       <Tagline />
       <p className="max-w-lg text-center text-secondary-foreground">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque, labore commodi illo est animi,
-        facilis, aut perferendis harum deserunt voluptates quibusdam blanditiis in voluptas id inventore nobis veritatis
-        tempora!
+        In all we do, it&apos;s for culture, learning, profits, and yearning. Begin with a small step, which will lead
+        to a larger outcome. Dare to take a risk !
       </p>
       <div ref={container} className="relative flex h-full w-full items-center justify-center">
         <motion.div style={{ y: sm }} className="absolute">

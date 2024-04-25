@@ -3,6 +3,7 @@ import { motion, useAnimate } from 'framer-motion';
 import React, { useEffect } from 'react';
 
 import { Marquee } from '@/components/Animation';
+import { Link } from '@/components/Link';
 import { Button } from '@/components/ui/button';
 
 export const Hero = () => {
@@ -35,11 +36,12 @@ export const Hero = () => {
           className="flex flex-col items-center justify-center gap-3"
         >
           <p className="text-center text-xl text-foreground/40 ">
-            Our community is dedicated to exploring the endless possibilities of NFT technology and empowering artists
-            and creators to showcase their unique talents to the world. Join us in shaping the future of the digital art
-            world and become a part of the Alpha community today.
+            Join us to learn, improve, and succeed. Embrace failure as a stepping stone to greater victories. Fill out
+            the form to join our community.
           </p>
-          <Button> Know More</Button>
+          <Link href={process.env.NEXT_PUBLIC_JOIN_FORM}>
+            <Button className="rounded-lg"> Join Now</Button>
+          </Link>
         </motion.div>
       </div>
       <motion.section initial={{ opacity: 0 }} id="marquee" className="h-full w-full overflow-hidden">
